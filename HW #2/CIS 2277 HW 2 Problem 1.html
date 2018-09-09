@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback Form</title>
+</head>
+
+<body>
+    <h1>Feedback Form</h1>
+
+    <p>Please fill out this form to help us improve our site.</p>
+
+    <form>
+        Name:
+        <input type="text" name="name" size="20" required>
+        <br><br>Comments:<br>
+        <textarea name="comments" rows="5" cols="30" placeholder="Enter comments here." maxlength="500"></textarea>
+        <br><br>E-mail Address:
+        <input type="email" name="email"><br><br>
+
+        <b>Things you liked:</b>
+        <br>
+        <input type="checkbox" name="liked" value="sitedesign">Site design
+        <input type="checkbox" name="liked" value="links">Links
+        <input type="checkbox" name="liked" value="easeofuse">Ease of use
+        <input type="checkbox" name="liked" value="images">Images
+        <input type="checkbox" name="liked" value="sourcecode">Source code
+        <br><br>
+
+        <b>How did you get to our site?:</b>
+        <br>
+        <input type="radio" name="reachsite" value="searchEngine" checked>Search engine
+        <input type="radio" name="reachsite" value="links">Links from another site
+        <input type="radio" name="reachsite" value="deitel">Deitel.com Web site
+        <input type="radio" name="reachsite" value="reference">Reference in a book
+        <input type="radio" name="reachsite" value="other">Other
+        <br><br>
+
+        Rate our site:
+        <select name="rating">
+            <option value="Amazing">Amazing</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+
+</body>
+
+</html>

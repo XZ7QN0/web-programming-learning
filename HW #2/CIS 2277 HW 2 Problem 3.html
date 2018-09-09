@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background-color: #F0F0F0;
+        font-size: 1em;
+        font-family: "Verdana", sans-serif !important;
+    }
+    .float-container {
+        border: solid 1px #ccc;
+        padding: 0 12px;
+        position: relative;
+        border-radius: 12px;
+        width: 800px;
+        height: auto;
+        background-color: #F0F0F0;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        padding: 30px;
+        width: 68%;
+        margin: auto;
+    }
+    #contact {
+        border: none;
+        padding: 0 0px;
+        position: relative;
+        margin-right: 30px;
+        float: left;
+    }
+    .float-container-contact {
+        border: solid 1px #ccc;
+        padding: 0 12px;
+        position: relative;
+        border-radius: 12px;
+        width: 385px;
+        height: 60px;
+        margin-right: 5px;
+        float: left;
+        background-color: #F0F0F0;
+    }
+    .float-container-submit {
+        border: solid 1px #000;
+        margin: auto;
+        padding: 12px 12px;
+        position: relative;
+        border-radius: 30px;
+        width: 830px;
+        height: auto;
+        color: white;
+        background-color: black;
+    }
+    .float-container input, .float-container textarea, .float-container select, .float-container-contact input {
+        border: none;
+        font-size: 16px;
+        outline: 0;
+        padding: 30px 0 10px;
+        background-color: #F0F0F0;
+    }
+    label {
+        font-size: 16px;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center"><strong>Contact Us</strong></h1><br>
+        <form>
+            <!--Full Name field-->
+            <div id="fullname" class="float-container">
+                <label for="floatField">FULL NAME*</label>
+                <input id="floatField" type="text" placeholder="Enter Your Name">
+            </div><br>
+
+            <!--Email and Phone field-->
+            <div id="contact">
+                <!--Email-->
+                <div class="float-container-contact">
+                    <label for="emailField">EMAIL*</label>
+                    <input id="emailField" type="email" placeholder="Enter Your Email"><br>
+                </div>
+                <!--Phone-->
+                <div class="float-container-contact">
+                    <label for="phoneField">PHONE</label>
+                    <input id="phoneField" type="tel" placeholder="Enter Number Phone">
+                </div>
+            </div><br><br><br><br>
+
+            <!--Needed Services field-->
+            <div id="neededservices" class="float-container">
+                <label for="floatField">NEEDED SERVICES*</label>
+                <select name="services" style="width: 100%;">
+                    <option value="eCommerce Business" selected>eCommerce Business</option>
+                    <option value="farming">Farming</option>
+                </select>
+            </div><br>
+
+            <!--Products Selling radio buttons-->
+            <p>WHAT TYPES OF PRODUCTS DO YOU SELL?</p>
+            <input type="radio" name="products" value="physical" checked>Physical Products<br>
+            <input type="radio" name="products" value="digital">Digital Products<br>
+            <input type="radio" name="products" value="consulting">Services Consulting<br><br>
+
+            <!--Budget input range-->
+            <p>BUDGET*</p>
+            <input type="range" name="budget" min="1500" max="10000"><br><br>
+
+            <!--Message textarea-->
+            <div id="message" class="float-container" style="background-color: white;">
+                <label for="messageField">MESSAGE</label>
+                <textarea id="messageField" name="message" style="background-color: white;" cols="88" placeholder="Your message here..."></textarea>
+            </div><br>
+
+            <!--Submit button-->
+            <input type="submit" class="float-container-submit" value="Submit &rarr;">
+        </form>
+    </div>
+</body>
+
+</html>
