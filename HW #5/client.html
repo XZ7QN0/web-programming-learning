@@ -7,12 +7,9 @@
 </head>
 
 <body>
-    <h1>Feedback Form</h1>
 
-    <p>Please fill out this form to help us improve our site.</p>
-
+    <!--Form embedded within a table to get a table-like output-->
     <table>
-
         <form name="form1" id="form1">
             <tr>
                 <td>Client Information</td>
@@ -62,10 +59,11 @@
                 <td><button type="button" onclick="printClientInfo()">Get Info</button></td>
             </tr>
             <tr>
-                <td><textarea name="clientInfo" id="clientInfo"></textarea></td>
+                <td><textarea rows="12" cols="35" name="clientInfo" id="clientInfo"></textarea></td>
             </tr>
         </form>
     </table>
+
     <script src="client.js"></script>
 </body>
 

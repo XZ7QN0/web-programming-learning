@@ -56,34 +56,18 @@ function update_board() {
     }
 }
 
-function check_victory() {
-    if (move_count < 0)
-        return;
-    for (i = 0; i < 16; i++) {
-        if (i == 13 && numbers[i] == 15 && numbers[i + 1] == 14) {
-            alert("Nice, you almost solved it in " + move_count +
-                " moves.\nYour prize is almost on the way.\n" +
-                "Try a little harder. :)");
-            move_count = -1;
-            return;
-        }
-        if (numbers[i] != i + 1 && i != 15)
-            return;
-    }
-    alert("Congratulation, you did it in " + move_count + " moves.");
-    move_count = -1;
-}
-
-function process_click(y, x) {
+// Function call that checks to see if tile can be moved
+// Calls two functions that move the tile and update the board
+function click_to_move(y, x) {
     if (x != empty_x && y != empty_y) {
         window.status = "This piece can not move";
         return;
     }
     process_move(y, x);
     update_board();
-    check_victory();
 }
 
+// Resets the board back to its original state.
 function reset_numbers() {
     for (y = 1; y <= 4; y++) {
         for (x = 1; x <= 4; x++) {
@@ -111,6 +95,7 @@ function pseudo_reset_numbers() {
     move_count = 0;
 }
 
+// Scrambles the board randomly
 function scramble_numbers() {
     rand_x = 4;
     rand_y = 4;
