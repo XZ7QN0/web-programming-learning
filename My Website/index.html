@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jonathon Chenvert</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap CSS + Externally Sourced CSS files-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!--Local CSS files-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--Navbar Setup-->
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#about">
+                            About</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Something</a>
+                            <a class="dropdown-item" href="#">Something else</a>
+                            <a class="dropdown-item" href="#">More</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interests">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#findme">Find Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume/resume.html" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--/Navbar Setup-->
+
+    <!--Jumbotron Setup-->
+    <div class="jumbotron">
+        <div class="container-fluid text-left">
+            <h3>Jonathon Chenvert</h3>
+        </div>
+    </div>
+    <!--/Jumbotron Setup-->
+
+    <!--About Me-->
+    <div class="container-fluid" id="about">
+        <h1>About</h1>
+        <p>This website is an overview of who I am, which includes hobbies, interests, and curiosities.</p>
+        <h4 id="music">My Music</h4>
+        <p>This is my favorite song at the moment. It's calming, and I usually listen to this song when cleaning.</p>
+        <audio controls>
+            <source src="music/kiri.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+        <h4 id="album">Small Photo Album</h4>
+        <p>A small collection of photos in my life, which include my two dogs, and fiancee.</p>
+        <!--Carousel Setup-->
+        <div class="container" id="carousel1">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <!--Carousel, centered-->
+                <div class="col-sm-6 col-centered">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/poukie.jpg" alt="Poukie" width="375" height="500">
+                                <div class="carousel-caption">
+                                    <h3>Poukie</h3>
+                                    <p>My first dog, now 10 years old!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/jacob.jpg" alt="Jacob" width="375" height="500">
+                                <div class="carousel-caption">
+                                    <h3>Jacob</h3>
+                                    <p>Weird name for a dog, but we just got him a few months ago because he's cute!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/fiancee.jpg" alt="Fiancee" width="375" height="500">
+                                <div class="carousel-caption">
+                                    <h3>My Fiancee</h3>
+                                    <p>Everything I do, I dedicate to her!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <!--/Carousel, centered-->
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+        <h4 id="youtube">YouTube Videos</h4>
+        <p>This is the type of videos that I usually watch.</p>
+        <iframe width="527" height="412" src="https://www.youtube.com/embed/cYNdUM2gRsg?controls=0">
+        </iframe>
+    </div>
+    <!--/Carousel Setup-->
+    <!--/About Me-->
+
+    <!--Fluid Containers Setup: Row 1-->
+    <div class="container-fluid bg-3" id="interests">
+        <h1>Interests</h1><br>
+        <div class="row text-center">
+            <div class="col-sm-3">
+                <h4>Pokemon</h4>
+                <p>Introduced to Pokemon when I was 5, it has been an influence to do what I do now.</p>
+                <img src="images/pokemon.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <h4>Tech Enthusiast</h4>
+                <p>Learning about new gadgets and tech is always a fascinating experience!</p>
+                <img src="images/techenthusiast.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <h4>CS Student</h4>
+                <p>For the moment. Hopefully soon, I'll be a Software Developer.</p>
+                <img src="images/csstudent.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <h4>Family Man</h4>
+                <p>Dedicated to my family, and being there when they need me to be.</p>
+                <img src="images/family.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div><br>
+    <!--/Fluid Containers Setup: Row 1-->
+
+    <!--Fluid Containers Setup: Row 2-->
+    <div class="container-fluid bg-3 text-center">
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>Hamburger Connoisseur</h4>
+                <p>Fresh made hamburgers, seasoned with salt, pepper, and wine.</p>
+                <img src="images/burger.jpg" class="img-fluid" style="width:100%" alt="hamburgers">
+            </div>
+            <div class="col-sm-3">
+                <h4>Wine Enthusiast</h4>
+                <p>Relaxing with wine and Cheez-Its after a long day of work.</p>
+                <img src="images/wine.jpg" class="img-responsive" style="width:100%" alt="wine">
+            </div>
+            <div class="col-sm-3">
+                <h4>Home Chef</h4>
+                <p>Flour tortilla, Spanish red rice, pulled pork and avacados.</p>
+                <img src="images/homechef.jpg" class="img-responsive" style="width:100%" alt="homecooking">
+            </div>
+            <div class="col-sm-3">
+                <h4>Comedy Lover</h4>
+                <p>It's always great to laugh every now and then. It helps to unwind.</p>
+                <img src="images/meme.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div><br><br>
+    <!--/Fluid Containers Row 2-->
+
+    <!--Contact-->
+    <div class="container-fluid" id="contact">
+        <h1>Contact</h1>
+        <form class="form-horizontal" action="">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Your Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Your Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="message">Message:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="message" placeholder="What would you like to say to me?"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--/Contact-->
+
+    <!--Find me-->
+    <div class="container-fluid" id="findme">
+        <h1>Find me!</h1>
+        <p>Click on the red marker on the map to find more information on my usual hangout spot!</p>
+        <div id="map"></div>
+    </div>
+    <!--/Find me-->
+
+    <!--Footer Setup-->
+    <footer class="container-fluid text-center">
+        <p>Find me on social media!</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jonathon-chenvert-62b52ab1/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/XZ7QN0" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    <!--/Footer Setup-->
+
+    <!--Bootstrap + Externally Sourced JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1rvgM8jVEHw5EOVZYbFoCeu3w1GRJeSU&callback=initMap">
+    </script>
+    <!--Local JS files-->
+    <script src="googlemaps.js"></script>
+
+</body>
+
+</html>

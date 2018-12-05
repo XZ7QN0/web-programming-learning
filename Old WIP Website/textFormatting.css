@@ -1,0 +1,14 @@
+.definition {
+    color: #0000B2;
+    font-weight: bold;
+}
+
+abbr {
+    color: #FF1919;
+    font-weight: bold;
+}
+
+a.homepage {
+    text-decoration: none;
+    color: black;
+}
