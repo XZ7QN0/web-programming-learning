@@ -18,10 +18,19 @@
      background: #9370DB;
  }
 
+ .dropdown-menu {
+     background-color: #9900FF;
+ }
+
  /*Jumbotron's CSS properties*/
  .jumbotron {
      background-color: #9370DB;
      padding-top: 100px;
+ }
+
+ .img-thumbnail {
+     width: 150px;
+     height: 200px;
  }
 
  /*Carousel CSS properties, including the container that it's in*/
@@ -39,17 +48,37 @@
  }
 
  /*Padding when clicking on navbar's links*/
- h1 {
+ h1,
+ h4 {
      margin-top: 60px;
  }
 
  .container-fluid {
-     padding-top: 20px;
+     padding-top: 10px;
+ }
+
+ .subheader {
+     padding-top: 60px;
  }
 
  #FC1,
  body {
      background-color: #9999FF;
+ }
+
+ /*Different background color for the Projects section of the website*/
+ #projects,
+ #contact {
+     background-color: #9370DB;
+     padding-bottom: 10px;
+ }
+
+ .githublinks {
+     color: black;
+ }
+
+ .githublinks:hover {
+     color: #9999FF;
  }
 
  /* Add a gray background color and some padding to the footer */
@@ -82,7 +111,7 @@
 
  /*Google Maps Styling*/
  #map {
-     height: 300px;
+     height: 400px;
      width: 60%;
      margin: 0 auto 0 auto;
  }
